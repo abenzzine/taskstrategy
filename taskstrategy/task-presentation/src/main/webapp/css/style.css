@@ -1,0 +1,799 @@
+/* Global Styles */
+
+/* ------------------------------- */
+
+/* Ico Moon Font Definitions
+/**************************** */
+
+@font-face {
+    font-family: 'icomoon';
+    src:url('../fonts/icomoon.eot');
+    src:url('../fonts/icomoon.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.woff') format('woff'),
+    url('../fonts/icomoon.ttf') format('truetype'),
+    url('../fonts/icomoon.svg#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.icon-facebook, .icon-twitter {
+    font-family: 'icomoon';
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-facebook:before {
+    content: "\e600";
+}
+.icon-twitter:before {
+    content: "\e601";
+}
+
+.icomoon {
+    display: block;
+    color: #fff;
+    padding-right: 3px;
+    font-size: 1.3em;
+}
+
+/**************************** */
+
+.word-wrap {
+    -ms-word-break: break-all;
+    word-break: break-all;
+    /* Non standard for webkit */
+    word-break: break-word;
+    -webkit-hyphens: auto;
+    -moz-hyphens: auto;
+    hyphens: auto;
+}
+
+#main-content h1 {
+    margin-top: 0;
+    padding-top: 20px;
+}
+
+.dashboard {
+    background-color: #ecf0f1;
+    height: 100%;
+}
+
+.navbar-default {
+    background-color: #34495e;
+    border-color: #34495e;
+}
+
+.btn {
+    margin-bottom: 10px;
+}
+
+#footer {
+    text-align: right;
+}
+
+/* Wrappers */
+
+/* ------------------------------- */
+
+#wrapper {
+    width: 100%;
+    height: 100%;
+}
+
+@media (min-width: 768px) {
+    #page-wrapper {
+        position: inherit;
+        margin: 0 0 0 250px;
+        padding: 0 30px;
+        min-height: 800px;
+        height: 100%;
+        background-color: #ecf0f1;
+        border-left: 1px solid #e7e7e7;
+    }
+}
+
+.navbar-static-side ul li {
+    border-top: 1px solid #54677a;
+    border-bottom: 1px solid #142638;
+}
+
+/* Navigation */
+
+/* ------------------------------- */
+
+/* Top Right Navigation Dropdown Styles */
+
+.navbar-top-links li {
+    display: inline-block;
+}
+
+.navbar-top-links li:last-child {
+    margin-right: 15px;
+}
+
+.navbar-top-links li a {
+    padding: 15px;
+    min-height: 50px;
+    color: #FFF;
+}
+
+.navbar-top-links .dropdown-menu li {
+    display: block;
+}
+
+.navbar-top-links .dropdown-menu li:last-child {
+    margin-right: 0;
+}
+
+.navbar-top-links .dropdown-menu li a {
+    padding: 3px 20px;
+    min-height: 0;
+}
+
+.navbar-top-links .dropdown-menu li a div {
+    white-space: normal;
+}
+
+.navbar-top-links .dropdown-messages,
+.navbar-top-links .dropdown-tasks,
+.navbar-top-links .dropdown-alerts {
+    width: 310px;
+    min-width: 0;
+}
+
+.navbar-top-links .dropdown-messages {
+    margin-left: 5px;
+}
+
+.navbar-top-links .dropdown-tasks {
+    margin-left: -59px;
+}
+
+.navbar-top-links .dropdown-alerts {
+    margin-left: -123px;
+}
+
+.navbar-top-links .dropdown-user {
+    right: 0;
+    left: auto;
+}
+
+.navbar-static-top {
+    background-color: #2c3e50;
+}
+
+/* Sidebar Menu Styles */
+
+.sidebar-search {
+    padding: 15px;
+}
+
+.arrow {
+    float: right;
+}
+
+.nav-second-level li,
+.nav-third-level li {
+    border-bottom: none !important;
+}
+
+.nav-second-level li a {
+    padding-left: 37px;
+}
+
+.nav-third-level li a {
+    padding-left: 52px;
+}
+
+@media (min-width: 768px) {
+    .navbar-static-side {
+        z-index: 1;
+        position: absolute;
+        width: 250px;
+        height: 100%;
+    }
+
+    .navbar-top-links .dropdown-messages,
+    .navbar-top-links .dropdown-tasks,
+    .navbar-top-links .dropdown-alerts {
+        margin-left: auto;
+    }
+}
+
+/* Buttons */
+
+/* ------------------------------- */
+
+.announcement-text {
+    min-height: 3em;
+}
+
+.btn-outline {
+    color: inherit;
+    background-color: transparent;
+    transition: all .5s;
+}
+
+.btn-primary.btn-outline {
+    color: #428bca;
+}
+
+.btn-success.btn-outline {
+    color: #5cb85c;
+}
+
+.btn-info.btn-outline {
+    color: #5bc0de;
+}
+
+.btn-warning.btn-outline {
+    color: #f0ad4e;
+}
+
+.btn-danger.btn-outline {
+    color: #d9534f;
+}
+
+.btn-primary.btn-outline:hover,
+.btn-success.btn-outline:hover,
+.btn-info.btn-outline:hover,
+.btn-warning.btn-outline:hover,
+.btn-danger.btn-outline:hover {
+    color: #fff;
+}
+
+.btn-high {
+    min-height: 50px;
+}
+
+/* Pages */
+
+/* ------------------------------- */
+
+/* Dashboard Chat */
+
+.chat {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.chat li {
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+    border-bottom: 1px dotted #B3A9A9;
+}
+
+.chat li.left .chat-body {
+    margin-left: 60px;
+}
+
+.chat li.right .chat-body {
+    margin-right: 60px;
+}
+
+.chat li .chat-body p {
+    margin: 0;
+    color: #777777;
+}
+
+.panel .slidedown .glyphicon,
+.chat .glyphicon {
+    margin-right: 5px;
+}
+
+.chat-panel .panel-body {
+    height: 350px;
+    overflow-y: scroll;
+}
+
+/* Login Page */
+
+.login-panel {
+    margin-top: 25%;
+}
+
+/* Login Top Nav Modal Activation */
+
+body.modal-open {
+    margin-right: 0 !important;
+}
+
+a {
+    cursor: pointer;
+}
+
+/* Flot Chart Containers */
+
+.flot-chart {
+    display: block;
+    height: 400px;
+}
+
+.flot-chart-content {
+    width: 100%;
+    height: 100%;
+}
+
+#tabs {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-bottom: 1px;
+    border-bottom: 2px solid #dddddd;
+}
+
+#tabs li.active a {
+    border: 2px solid #dddddd;
+    border-bottom: none;
+}
+
+#tabs li a, #tabs li.active a:hover {
+    color: #000;
+    font-weight: 600;
+}
+
+#tabs li a:hover {
+    cursor: pointer;
+    color: #ffffff;
+}
+
+.report td {
+    border-left: 1px solid #dddddd;
+}
+
+.report td:first-child {
+    border-left: none;
+}
+
+/* Circle Buttons */
+
+.btn-circle {
+    width: 30px;
+    height: 30px;
+    padding: 6px 0;
+    border-radius: 15px;
+    text-align: center;
+    font-size: 12px;
+    line-height: 1.428571429;
+}
+
+.btn-circle.btn-lg {
+    width: 50px;
+    height: 50px;
+    padding: 10px 16px;
+    border-radius: 25px;
+    font-size: 18px;
+    line-height: 1.33;
+}
+
+.btn-circle.btn-xl {
+    width: 70px;
+    height: 70px;
+    padding: 10px 16px;
+    border-radius: 35px;
+    font-size: 24px;
+    line-height: 1.33;
+}
+
+.show-grid [class^="col-"] {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border: 1px solid #ddd;
+    background-color: #eee !important;
+}
+
+.show-grid {
+    margin: 15px 0;
+}
+
+.nav > li > a {
+    color: #FDFDFD;
+    text-decoration: none;
+}
+
+.nav > li > a:hover {
+    background-color: #333;
+    background-color: rgba(255, 255, 255, 0.05);
+    color: #fff;
+    text-decoration: none;
+}
+
+.dropdown-menu > li > a {
+    display: block;
+    padding: 3px 20px;
+    clear: both;
+    font-weight: normal;
+    line-height: 1.428571429;
+    color: #333333;
+    white-space: nowrap;
+}
+
+.nav > li > a:hover {
+    color: #FFF;
+    background-color: rgb(61, 86, 110);
+}
+
+.nav .open > a, .nav .open > a:hover, .nav .open > a:focus {
+    background-color: rgb(61, 86, 110);;
+    border-color: rgb(255, 255, 255);
+}
+
+.dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus {
+    text-decoration: none;
+    color: #FFF;
+    background-color: rgb(61, 86, 110);
+}
+
+.navbar-default .navbar-brand {
+    color: #FFF;
+}
+
+.btn-success:hover, .btn-success:focus, .btn-success:active, .btn-success.active, .open .dropdown-toggle.btn-success {
+    color: #fff;
+    background-color: #16a085;
+    border-color: #16a085;
+}
+
+.btn-success {
+    color: #fff;
+    background-color: #16a085;
+    border-color: #16a085;
+}
+
+.actionBar {
+    margin-top: 10px;
+}
+
+.input-group-btn-spaced {
+    margin-right: 5px;
+    position: relative;
+    white-space: nowrap;
+}
+
+.navbar-default .navbar-brand:hover {
+    color: #FFF;
+}
+
+.panel-default > .panel-heading {
+    color: #FFF;
+    background-color: #34495e;
+    border-color: #2c3e50;
+}
+
+.list-group-item {
+    position: relative;
+    display: block;
+    padding: 10px 15px;
+    margin-bottom: -1px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+.btn-matched:hover, .btn-matched:focus, .btn-matched:active, .btn-matched.active, .open .dropdown-toggle.btn-matched {
+    color: #FFF;
+    background-color: #34495e;
+    border-color: #000;
+}
+
+.btn-matched {
+    color: #FFF;
+    background-color: #34495e;
+    border-color: #2c3e50;
+}
+
+table.table-red thead {
+    color: #fff;
+    background-color: #e74c3c;
+}
+
+#learn-more h2 {
+    font-size: 1.4em;
+    color: #677890;
+}
+
+#learn-more p {
+    line-height: 1.6em;
+}
+
+#home-bottom-sign-up {
+    background-color: #f5f5f5;
+    padding-bottom: 30px;
+}
+
+#home-bottom-sign-up h2 {
+    color: #677890;
+}
+
+.frontimg {
+    background-image: url(../img/home-banner.jpg);
+    background-size: cover;
+    color: #ffffff;
+    border-bottom: solid 5px #2c3e50;
+}
+
+.frontimg .container {
+    padding-top: 90px;
+    padding-bottom: 170px;
+}
+
+.frontimg a.btn {
+    padding-top: 10px;
+    padding-bottom: 30px;
+}
+
+.jumbotron {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+}
+
+#home-arrow-bottom {
+    position: relative;
+    bottom: 18px;
+}
+
+#home-arrow-bottom .btn {
+    border: solid 2px #2c3e50;
+    color: #2c3e50;
+}
+
+/*
+ * Action Mode
+ **********************/
+div.top {
+    padding-top: 15px;
+}
+
+div.passnote {
+    text-align: center;
+    padding-bottom: 12px;
+    color: #079623;
+}
+
+div.am_task {
+    font-size: 150%;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 30px;
+}
+
+textarea#txtaTasks {
+    width: 100%;
+    height: 100px;
+}
+
+div#taskbox {
+    background-color: #ffffff;
+    border: 1px solid #adadad;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 30px;
+    min-height: 165px;
+    font-size: 120%;
+}
+
+div.actionModeCongrats {
+    text-align: center;
+    font-weight: bold;
+    font-size: 150%;
+    color: #1A9C9C;
+}
+div.congratsLink {
+    text-align: center;
+    font-weight: bold;
+    margin-top: 3px;
+}
+
+textarea#subtasks {
+    margin-bottom: 15px;
+    height: 100px;
+}
+
+.actionProgressBar {
+    background-color: #37C094;
+    padding: 5px;
+    margin-top: 5px;
+    border: 1px solid #000;
+    color: #fff;
+    text-align: center;
+}
+
+.actionProgressBar div:first-child {
+    font-size: 110%;
+}
+
+.actionProgressBar span {
+    border: 1px solid #1FA595;
+    font-size: 130%;
+    padding: 4px;
+    background-color: #38803E;
+}
+
+
+.pagination > .active > a, .pagination > .active > span, .pagination > .active > a:hover, .pagination > .active > span:hover, .pagination > .active > a:focus, .pagination > .active > span:focus {
+    z-index: 2;
+    color: #fff;
+    cursor: default;
+    background-color: #34495e;
+    border-color: #2c3e50;
+}
+
+/*
+ * Contact Us
+ **********************/
+
+textarea#comments {
+    width: 100%;
+    height: 100px;
+    margin-bottom: 15px;
+}
+
+.dashboardInfo {
+    font-size: 4em;
+}
+
+.announcement-heading {
+    font-size: 3em;
+    margin: 0;
+}
+
+.announcement-heading {
+    font-size: 3em;
+    margin: 0;
+}
+
+.announcement-heading-small {
+    font-size: 2em;
+    margin: 0;
+}
+
+.announcement-text {
+    margin: 0;
+}
+
+a {
+    color: #2c3e50;
+    text-decoration: none;
+}
+
+a:hover, a:focus {
+    color: #34495e;
+}
+
+.bootstrap-tagsinput {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    display: inline-block;
+    padding: 4px 6px;
+    margin-bottom: 10px;
+    color: #555;
+    vertical-align: middle;
+    border-radius: 4px;
+    max-width: 100%;
+    line-height: 22px;
+    height: auto;
+}
+
+.alert-notification {
+    background-color: #d9534f;
+    color: #ffffff;
+}
+
+.alert-notification a {
+    color: #ffffff;
+}
+
+.footable-row-detail-row {
+    display: table-row;
+    line-height: 2em;
+}
+
+.footable > tfoot .pagination {
+    float: right;
+}
+
+.label-info {
+    background-color: #000;
+}
+
+#tabs li a {
+    color: #000;
+    text-decoration: none
+}
+
+/* report table for responsiveness */
+
+/*
+Generic Styling, for Desktops/Laptops
+*/
+.report-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+/* Zebra striping */
+table.report-table tr:nth-of-type(odd) {
+    background: #eee;
+}
+table.report-table th {
+    background: #333;
+    color: white;
+    font-weight: bold;
+}
+table.report-table td, table.report-table th {
+    padding: 6px;
+    border: 1px solid #ccc;
+    text-align: left;
+}
+/* media query */
+
+/*
+Max width before this PARTICULAR table gets nasty
+This query will take effect for any screen smaller than 760px
+and also iPads specifically.
+*/
+@media
+only screen and (max-width: 760px),
+(min-device-width: 768px) and (max-device-width: 1024px)  {
+
+    #page-wrapper {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    /* Force table to not be like tables anymore */
+    table.report-table, table.report-table thead, table.report-table tbody, table.report-table th, table.report-table td, table.report-table tr {
+        display: block;
+    }
+
+    /* Hide table headers (but not display: none;, for accessibility) */
+    table.report-table  thead tr {
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+    }
+
+    table.report-table tr { border: 1px solid #ccc; }
+
+    table.report-table td {
+        /* Behave  like a "row" */
+        border: none;
+        border-bottom: 1px solid #eee;
+        position: relative;
+        padding-left: 50%;
+    }
+
+    table.report-table td:before {
+        /* Now like a table header */
+        position: absolute;
+        /* Top/left values mimic padding */
+        top: 6px;
+        left: 6px;
+        width: 45%;
+        padding-right: 10px;
+        white-space: nowrap;
+    }
+
+    /*
+    Label the data
+    */
+    table.report-table td:nth-of-type(1):before { content: "Description"; }
+    table.report-table td:nth-of-type(2):before { content: "Open"; }
+    table.report-table td:nth-of-type(3):before { content: "Completed"; }
+    table.report-table td:nth-of-type(4):before { content: "Completed Early"; }
+    table.report-table td:nth-of-type(5):before { content: "Past Due"; }
+
+}
+
+#__ig_wm__ {
+    display: none;
+}

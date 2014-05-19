@@ -1,0 +1,13 @@
+.footable {
+    border: none;
+}
+
+.footable>thead>tr>th, .footable>thead>tr>td {
+    background-color: #e74c3c;
+    border: 1px solid #e74c3c;
+}
+
+.footable>tfoot>tr>th, .footable>tfoot>tr>td {
+    background-color: #e74c3c;
+    border: 1px solid #e74c3c;
+}

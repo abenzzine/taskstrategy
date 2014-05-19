@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE tiles-definitions PUBLIC
+        "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
+        "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+<tiles-definitions>
+    <definition name="base.definition" template="/WEB-INF/views/homelayout.jsp">
+        <put-attribute name="header" value="" />
+        <put-attribute name="body" value="" />
+    </definition>
+    <definition name="taskLayout" template="/WEB-INF/views/layout.jsp">
+        <put-attribute name="body" value="" />
+    </definition>
+    <definition name="taskView" extends="taskLayout">
+        <put-attribute name="body" value="/WEB-INF/views/task_view.jsp" />
+    </definition>
+    <definition name="taskDashboard" extends="taskLayout">
+        <put-attribute name="body" value="/WEB-INF/views/task_dashboard.jsp" />
+    </definition>
+    <definition name="taskNew" extends="taskLayout">
+        <put-attribute name="body" value="/WEB-INF/views/task_edit.jsp" />
+    </definition>
+    <definition name="tagView" extends="taskLayout">
+        <put-attribute name="body" value="/WEB-INF/views/tag_view.jsp" />
+    </definition>
+    <definition name="tagEdit" extends="taskLayout">
+        <put-attribute name="body" value="/WEB-INF/views/tag_edit.jsp" />
+    </definition>
+    <definition name="index" extends="base.definition">
+        <put-attribute name="body" value="/WEB-INF/views/index.jsp" />
+    </definition>
+    <definition name="about" extends="base.definition">
+        <put-attribute name="body" value="/WEB-INF/views/about.jsp" />
+    </definition>
+    <definition name="privacyPolicy" extends="base.definition">
+        <put-attribute name="body" value="/WEB-INF/views/privacy_policy.jsp" />
+    </definition>
+    <definition name="termsOfService" extends="base.definition">
+        <put-attribute name="body" value="/WEB-INF/views/terms_of_service.jsp" />
+    </definition>
+    <definition name="signup" extends="base.definition">
+        <put-attribute name="body" value="/WEB-INF/views/signup.jsp" />
+    </definition>
+    <definition name="action" extends="taskLayout">
+        <put-attribute name="body" value="/WEB-INF/views/action_mode.jsp" />
+    </definition>
+    <definition name="breakdown" extends="taskLayout">
+        <put-attribute name="body" value="/WEB-INF/views/breakdown.jsp" />
+    </definition>
+    <definition name="stuck" extends="taskLayout">
+        <put-attribute name="body" value="/WEB-INF/views/stuck.jsp" />
+    </definition>
+    <definition name="done" extends="taskLayout">
+        <put-attribute name="body" value="/WEB-INF/views/done_view.jsp" />
+    </definition>
+    <definition name="profile" extends="taskLayout">
+        <put-attribute name="body" value="/WEB-INF/views/profile.jsp" />
+    </definition>
+    <definition name="resetpassword" extends="base.definition">
+        <put-attribute name="body" value="/WEB-INF/views/resetpassword.jsp" />
+    </definition>
+    <definition name="forgotpassword" extends="base.definition">
+        <put-attribute name="body" value="/WEB-INF/views/forgotpassword.jsp" />
+    </definition>
+    <definition name="contact" extends="base.definition">
+        <put-attribute name="body" value="/WEB-INF/views/contact.jsp" />
+    </definition>
+    <definition name="report" extends="taskLayout">
+        <put-attribute name="body" value="/WEB-INF/views/GPieChart.jsp" />
+    </definition>
+</tiles-definitions>
